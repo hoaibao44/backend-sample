@@ -8,6 +8,7 @@ class Todo(models.Model):
     description = models.TextField()
     processing = models.FloatField(default=0.0)
     completed = models.BooleanField(default=False)
+    staff = models.TextField(default='')
 
     def _str_(self):
         return self.title
